@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir', sans-serif !important;
+}
+/* CSS for main section */
+.main{
+  width: 100%;
+  height:100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS for weather container */
+.weather-container{
+    width: 500px;
+    height: 95%;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    border-radius: 10px;
+    text-align: center;
+}
+/* CSS for search section */
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height:60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16PX;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+/* CSS for validation */
+.validator{
+    color: red;
+    display: none;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.search input:invalid ~ .validator{
+    display: block;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* CSS for weather icon */
+.weather-icon{
+    width: 170px;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+.weather-icon:hover{
+   transform: scale(1.1);
+}
+
+/* CSS for weather details */
+.weather-details h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.weather-details h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30;
+}
+/* CSS for other details */
+.other-details{
+ margin-top: 20px;
+ color: white;
+}
+.details h3{
+    margin-top: 10px;
+}
+.details h3:hover{
+    font-size: 30px;
+    color: rgb(45, 6, 14);
+}
